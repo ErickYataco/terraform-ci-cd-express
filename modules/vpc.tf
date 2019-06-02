@@ -16,6 +16,7 @@ module "main-vpc" {
 
   tags = {
     Terraform   = "true"
+    Lunch = "${timestamp()}" 
     Environment = "${var.ENV}"
   }
 }

@@ -45,6 +45,7 @@ resource "aws_instance" "instance" {
 
   tags {
     Name         = "instance-${var.ENV}"
+    Lunch = "${timestamp()}" 
     Environmnent = "${var.ENV}"
   }
 }
